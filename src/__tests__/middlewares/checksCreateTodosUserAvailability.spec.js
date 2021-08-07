@@ -80,7 +80,6 @@ describe('checksCreateTodosUserAvailability', () => {
     const mockResponse = response();
 
     checksCreateTodosUserAvailability(mockRequest, mockResponse, mockNext);
-
     expect(mockResponse.status).toBeCalledWith(403);
   });
 
